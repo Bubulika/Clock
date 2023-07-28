@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import sun from "./assets/desktop/icon-sun.svg";
 import moon from "./assets/desktop/icon-moon.svg";
 import arrowDown from "./assets/desktop/icon-arrow-down.svg";
@@ -7,8 +7,8 @@ import "./App.css";
 import axios from "axios";
 
 function App() {
-  const [more, setMore] = useState(false);
-  const [currentTime, setCurrentTime] = useState(new Date());
+  const [more, setMore] = useState<boolean>(false);
+  const [currentTime, setCurrentTime] = useState<any>(new Date());
   const [data, setData] = useState<any>("");
 
   useEffect(() => {
