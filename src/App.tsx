@@ -74,6 +74,7 @@ function App() {
         <div className="row flex">
           <div className="icon-paragraph">
             <img
+              alt="img"
               src={currentTime.toLocaleTimeString().includes("PM") ? sun : moon}
             ></img>
             <p className="currently">
@@ -94,6 +95,7 @@ function App() {
                   onClick={() => setMore(!more)}
                   className="arrow-icon"
                   src={more ? arrowDown : arrowUp}
+                  alt="img"
                 ></img>
               </div>
             </button>
